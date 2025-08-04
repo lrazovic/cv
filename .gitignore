@@ -1,0 +1,9 @@
+main.aux
+main.tex
+main.fls
+main.pdf
+main.fdb_latexmk
+main.log
+.vscode/ltex.dictionary.en-US.txt
+main.synctex.gz
+main.out

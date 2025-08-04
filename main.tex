@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{12pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge Leonardo Razovic} \\ \vspace{8pt}
+  \small (+41) 0774297473 $|$ \href{mailto:lrazovic@gmail.com}{\underline{lrazovic@gmail.com}} $|$ \\
+  \vspace{2pt}
+  \href{https://linkedin.com/in/leonardo-razovic/}{\underline{linkedin.com/in/leonardo-razovic}} $|$
+  \href{https://github.com/lrazovic}{\underline{github.com/lrazovic}} $|$
+  \href{https://x.com/lrazovic}{\underline{x.com/lrazovic}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{La Sapienza University}{ Rome, Italy}
+{M.Sc. in Engineering in Computer Science}{2020 -- 2023}
+\resumeSubheading
+{Polkadot Blockchain Academy}{ Cambridge, United Kingdom}
+{M.Sc. in Engineering in Computer Science}{July 2023 -- August 2023}
+\resumeSubheading
+{La Sapienza University}{Rome, Italy}
+{Bachelor in Engineering in Computer Science}{2016 -- 2020}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Chief Technology Officer}{Sep. 2022 -- Present}
+{Polimec Foundation}{Zug, Switzerland}
+\resumeItemListStart
+\resumeItem{Scaled Polimec from an idea to a production-ready decentralized funding protocol, leading a team of 5+ developers}
+\resumeItem{Orchestrated the PLMC token public sale with full regulatory compliance and KYC integration}
+\resumeItem{Architected and developed the complete Polimec blockchain infrastructure using Rust and Polkadot SDK}
+\resumeItem{Built end-to-end TypeScript KYC API integration}
+\resumeItem{Implemented core on-chain fundraising logic, staking mechanisms, inflation models, and governance systems}
+\resumeItem{Developed advanced blockchain features including vesting schedules, multisig wallets, and permission management}
+\resumeItem{Led the integration of Sumsub KYC API for compliance, replacing previous Verifiable Credentials implementation}
+\resumeItemListEnd
+
+\resumeSubheading
+{Teaching Assistant}{Dec. 2024 -- Feb. 2025}
+{Polkadot Blockchain Academy X}{Remote}
+\resumeItemListStart
+\resumeItem{Taught advanced blockchain and distributed system concepts to academy participants worldwide}
+\resumeItem{Explained current blockchain problems and limitations and their solutions within the Polkadot ecosystem}
+\resumeItem{Mentored students on practical blockchain development using Polkadot SDK and Substrate framework}
+\resumeItem{Provided hands-on guidance for building custom runtime pallets and blockchain applications}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Key Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Polimec Node} $|$ \emph{Rust, Polkadot SDK, Substrate}}{2022 -- Present}
+\resumeItemListStart
+\resumeItem{Built a full-featured blockchain for decentralized community-driven funding protocol for Web3}
+\resumeItem{Implemented complex on-chain logic for token sales, staking rewards, and decentralized governance}
+\resumeItem{Designed and developed custom runtime pallets for advanced features like vesting and multisig operations}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Primary Languages}{: Rust and TypeScript} \\
+        \textbf{Web Frameworks}{: Next.js, React, Node.js, Bun, Deno} \\
+        \textbf{APIs \& Integration}{: REST APIs, KYC Integration (Sumsub), OAuth, JWT} \\
+        \textbf{Developer Tools}{: Git, Docker, GitHub Actions, Linear, Graphite,} \\
+        \textbf{Rust Ecosystem}{: tokio, serde, reqwest, ed25519-dalek, jwt-compact} \\
+        \textbf{Databases \& Storage}{: PostgreSQL, Redis, IPFS, Blockchain Storage} \\
+    }}
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeItem{Successfully launched Polimec mainnet with full functionality and regulatory compliance}
+\resumeItem{Led the architecture and development of a novel decentralized funding protocol from concept to production}
+\resumeItem{Built and scaled a high-performing engineering team across multiple blockchain and frontend technologies}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
