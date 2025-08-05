@@ -6,23 +6,12 @@
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
 \input{glyphtounicode}
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -112,18 +101,28 @@
   \href{https://x.com/lrazovic}{\underline{x.com/lrazovic}}
 \end{center}
 
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{
+  Software Engineer specialized in Rust-based blockchain systems. As CTO at Polimec, scaled a decentralized funding protocol handling token sales. Experienced in low-level, no-std Rust codebases, REST APIs, microservices, and agile teams, with a passion for crypto-native solutions.
+}
+
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{La Sapienza University}{ Rome, Italy}
-{M.Sc. in Engineering in Computer Science}{2020 -- 2023}
-\resumeSubheading
-{Polkadot Blockchain Academy}{ Cambridge, United Kingdom}
-{M.Sc. in Engineering in Computer Science}{July 2023 -- August 2023}
-\resumeSubheading
 {La Sapienza University}{Rome, Italy}
-{Bachelor in Engineering in Computer Science}{2016 -- 2020}
+{M.Sc. in Engineering in Computer Science}{2020 -- 2023}
+\resumeSubSubheading
+{B.Sc. in Engineering in Computer Science}{2016 -- 2020}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Polkadot Blockchain Academy}{Cambridge, United Kingdom}
+{5-week intensive course on blockchain development by Parity}{Jul. 2023 -- Aug. 2023}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -134,23 +133,17 @@
 {Chief Technology Officer}{Sep. 2022 -- Present}
 {Polimec Foundation}{Zug, Switzerland}
 \resumeItemListStart
-\resumeItem{Scaled Polimec from an idea to a production-ready decentralized funding protocol, leading a team of 5+ developers}
-\resumeItem{Orchestrated the PLMC token public sale with full regulatory compliance and KYC integration}
-\resumeItem{Architected and developed the complete Polimec blockchain infrastructure using Rust and Polkadot SDK}
-\resumeItem{Built end-to-end TypeScript KYC API integration}
-\resumeItem{Implemented core on-chain fundraising logic, staking mechanisms, inflation models, and governance systems}
-\resumeItem{Developed advanced blockchain features including vesting schedules, multisig wallets, and permission management}
-\resumeItem{Led the integration of Sumsub KYC API for compliance, replacing previous Verifiable Credentials implementation}
+\resumeItem{Scaled Polimec from idea to production-ready decentralized funding protocol, leading a 5+ developer team to deliver compliant, high-throughput systems for token sales and staking}
+\resumeItem{Architected blockchain infrastructure using Rust and Polkadot SDK, implementing custom pallets for fundraising, inflation models, and governance with SOLID principles and design patterns for maintainability}
+\resumeItem{Engineered features like vesting and multisig wallets, optimizing for constrained environments; troubleshot and unit-tested code to ensure production-grade reliability in high-value crypto environments}
 \resumeItemListEnd
 
 \resumeSubheading
 {Teaching Assistant}{Dec. 2024 -- Feb. 2025}
 {Polkadot Blockchain Academy X}{Remote}
 \resumeItemListStart
-\resumeItem{Taught advanced blockchain and distributed system concepts to academy participants worldwide}
-\resumeItem{Explained current blockchain problems and limitations and their solutions within the Polkadot ecosystem}
-\resumeItem{Mentored students on practical blockchain development using Polkadot SDK and Substrate framework}
-\resumeItem{Provided hands-on guidance for building custom runtime pallets and blockchain applications}
+\resumeItem{Taught blockchain and distributed systems to 100+ participants, communicating complex concepts like scalability and interoperability in clear, actionable ways}
+\resumeItem{Mentored on practical development with Polkadot SDK and Substrate, guiding 20+ projects to testnet deployment while emphasizing proactive troubleshooting and best practices}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -160,13 +153,18 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Polimec Node} $|$ \emph{Rust, Polkadot SDK, Substrate}}{2022 -- Present}
+{\textbf{Polimec Runtime} $|$ \emph{Rust, Polkadot SDK, Substrate}}{2022 -- Present}
 \resumeItemListStart
-\resumeItem{Built a full-featured blockchain for decentralized community-driven funding protocol for Web3}
-\resumeItem{Implemented complex on-chain logic for token sales, staking rewards, and decentralized governance}
-\resumeItem{Designed and developed custom runtime pallets for advanced features like vesting and multisig operations}
+\resumeItem{Built blockchain for regulatory compliant Web3 funding, implementing on-chain logic for token sales and staking rewards—handling 500+ simulated transactions/minute with low-defect, SOLID-compliant code}
+\resumeItem{Designed custom pallets for vesting and governance, applying design patterns for scalable, maintainable systems}
 \resumeItemListEnd
 
+\resumeProjectHeading
+{\textbf{Polimec KYC API} $|$ \emph{TypeScript, Hono, Cloudflare Workers, SQL, REST APIs}}{2023 -- Present}
+\resumeItemListStart
+\resumeItem{Developed serverless microservices middleware for KYC/AML compliance, integrating Sumsub for user verification and IPFS for policy storage—ensuring regulatory adherence for financial services}
+\resumeItem{Implemented nonce-based signature verification for off-chain and on-chain user authentication via JWT auth (Ed25519), and SQL database operations for account linking}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -175,22 +173,12 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{
     \item{
-        \textbf{Primary Languages}{: Rust and TypeScript} \\
-        \textbf{Web Frameworks}{: Next.js, React, Node.js, Bun, Deno} \\
-        \textbf{APIs \& Integration}{: REST APIs, KYC Integration (Sumsub), OAuth, JWT} \\
-        \textbf{Developer Tools}{: Git, Docker, GitHub Actions, Linear, Graphite,} \\
-        \textbf{Rust Ecosystem}{: tokio, serde, reqwest, ed25519-dalek, jwt-compact} \\
-        \textbf{Databases \& Storage}{: PostgreSQL, Redis, IPFS, Blockchain Storage} \\
+        \textbf{Languages}{: Rust, TypeScript, JavaScript} \\
+        \textbf{Frameworks \& Tools}{: Polkadot SDK, Hono, Drizzle ORM (SQL), Git, Docker, Cloudflare (Workers, KV, D1)} \\
+        \textbf{APIs \& Protocols}{: REST APIs, GraphQL, JWT} \\
+        \textbf{Best Practices}{: Design Patterns, SOLID Principles, Unit Testing, Agile Development} \\
     }}
 \end{itemize}
-
-%-----------ACHIEVEMENTS-----------
-\section{Achievements}
-\resumeSubHeadingListStart
-\resumeItem{Successfully launched Polimec mainnet with full functionality and regulatory compliance}
-\resumeItem{Led the architecture and development of a novel decentralized funding protocol from concept to production}
-\resumeItem{Built and scaled a high-performing engineering team across multiple blockchain and frontend technologies}
-\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
